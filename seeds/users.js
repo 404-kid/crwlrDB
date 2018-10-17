@@ -5,23 +5,21 @@ exports.seed = function(knex, Promise) {
       return knex('users').insert([
         {
           id: 0,
-          username: 'Borra',
-          regularname: 'Job',
+          username: 'Job Smith',
           email: 'Jobsmith9@gmail.com',
           password: 'P7sm0njx',
-          bio: 'I love games and all their possible applications, I want to foster this new medium and its growth',
+          bio: 'this is a test 1',
           image: 'https://res.cloudinary.com/dypztrtsq/image/upload/v1525729406/vnomhdwofqlocn5g4foz.jpg',
-          band: 'the acid boys',
+          location: 'Denver,CO',
        },
        {
          id: 1,
-         username: 'Vandalf',
-         regularname: 'Job',
-         email: 'Jobsmith9@gmail.com',
+         username: 'Sob Jmith',
+         email: 'sobjmith@gmail.com',
          password: 'P7sm0njx',
-         bio: 'I am van that likes to make stories',
+         bio: 'this is a test 2',
          image: 'https://res.cloudinary.com/dypztrtsq/image/upload/v1526327266/32072661_2026679544326581_3949229592677449728_n.jpg',
-         band: 'the acid boys',
+         location: 'Denver,CO',
        },
       ]);
     });

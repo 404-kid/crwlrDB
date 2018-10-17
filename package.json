@@ -1,7 +1,7 @@
 {
-  "name": "gday-backend",
+  "name": "crwlr",
   "version": "1.0.0",
-  "description": "The gDay app is being developed to support a proposed annual alumni day or weekend for galvanize students. Front-end files are located here: https://github.com/404-kid/gDay",
+  "description": "crwlr mobile db",
   "main": "app.js",
   "scripts": {
     "start": "node index.js",
