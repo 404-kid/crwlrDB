@@ -25,29 +25,4 @@ module.exports = {
     newProfile(profile){
       return database("users").insert(profile).returning("*").then(record => record[0])
     }
-
-    // read(username){database("media").insert(media).returning("*").then(record => record[0])
-    //   return database("users").join('userprojects', "username", '=' , 'userprojects.creator').select('userprojects.bio', 'userprojects.name', 'users.username', 'userprojects.id', 'userprojects.image').where("username", username)
-    // },
-    // update(username, users){
-    //   return database("users").update(users).where("username", username).returning("*").then(record => record[0])
-    // },
-    // delete(id){
-    //   return database("users").delete().where("id", id)
-    // },
-    // creations(){
-    //   return database("userprojects").select()
-    // },
-    // creation(id){
-    //   return database("userprojects").select().where("id", id).first("")
-    // },
-    // mkCreation(creation){
-    //   return database("userprojects").insert(creation).returning("*").then(record => record[0])
-    // },
-    // getband(band){
-    //   return database("users").select('users.username', 'users.image').where("band", band)
-    // },
-    // updateBand(band, users){
-    //   return database("users").update(users).where("band", band).returning("*").then(record => record[0])
-    // },
 };
